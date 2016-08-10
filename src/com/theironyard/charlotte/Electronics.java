@@ -11,9 +11,9 @@ public class Electronics extends Inventory {
         this.category = "Electronics";
     }
 
-    @Override
-    public void itemDescrip() {
-        System.out.println("Things that have power");
-    }
+//    @Override
+//    public void itemDescrip() {
+//        System.out.println("Things that have power");
+//    }
 
 }

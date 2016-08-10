@@ -11,9 +11,9 @@ public class Clothing extends Inventory {
         this.category = "Clothing";
     }
 
-    @Override
-    public void itemDescrip() {
-        System.out.println("Things you wear");
-    }
+//    @Override
+//    public void itemDescrip() {
+//        System.out.println("Things you wear");
+//    }
 
 }

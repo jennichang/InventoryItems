@@ -10,10 +10,10 @@ public class Furniture extends Inventory {
         super(name, quantity);
         this.category = "Furniture";
     }
-
-    @Override
-    public void itemDescrip() {
-        System.out.println("Things you do stuff on");
-    }
+//
+//    @Override
+//    public void itemDescrip() {
+//        System.out.println("Things you do stuff on");
+//    }
 
 }

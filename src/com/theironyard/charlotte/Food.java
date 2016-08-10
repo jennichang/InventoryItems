@@ -11,9 +11,9 @@ public class Food extends Inventory {
         this.category = "Food";
     }
 
-    @Override
-    public void itemDescrip() {
-        System.out.println("Things you eat");
-    }
+//    @Override
+//    public void itemDescrip() {
+//        System.out.println("Things you eat");
+//    }
 
 }

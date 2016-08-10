@@ -58,13 +58,13 @@ public class Inventory {
 
     @Override
     public String toString() {
-        return "[" + this.quantity + "] " + this.name + " : " + this.category;
+        return "[" + this.quantity + "] " + this.name + " Category: " + this.category;
     }
 
 
-    public void itemDescrip() {
-        System.out.println("All");
-    }
+//    public void itemDescrip() {
+//        System.out.println("All");
+//    }
 
 }
 

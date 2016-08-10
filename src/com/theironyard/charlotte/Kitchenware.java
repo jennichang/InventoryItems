@@ -10,10 +10,10 @@ public class Kitchenware extends Inventory {
         this.category = "Kitchenware";
     }
 
-    @Override
-    public void itemDescrip() {
-        System.out.println("Things you use in the kitchen");
-    }
+//    @Override
+//    public void itemDescrip() {
+//        System.out.println("Things you use in the kitchen");
+//    }
 
 }
 
