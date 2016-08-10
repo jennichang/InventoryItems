@@ -7,6 +7,10 @@ public class Main {
 
     public static ArrayList<Inventory> items = new ArrayList<>(); // USE CREATE ITEM TO FILL ARRAY LIST
 
+    public static void setItems(ArrayList<Inventory> items) {
+        Main.items = items;
+    }
+
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in); // local variables
 
@@ -21,7 +25,12 @@ public class Main {
             String option = scanner.nextLine();
 
             if (option.equals("1")) {
-                System.out.println(items);
+                for (int i = 0;i < items.size();i++) {
+                    Inventory currentItem = items.get(i); // reference to our current item
+
+                    System.out.printf("%d. \n",
+                            i);
+                }
 
             } else if (option.equals("2")) {
 
@@ -58,16 +67,15 @@ public class Main {
             } else if (option.equals("4")) {
 
 
-
                 System.out.println("What item quantity would you like to update?");
-                String itemUpdate = scanner.nextLine();
+                int itemUpdate = Integer.valueOf(scanner.nextLine());
 
                 System.out.println("What is the new quantity?");
                 int quantUpdate = Integer.valueOf(scanner.nextLine());
-//
-//                if(Inventory.name.equals(itemUpdate)) {
-//                    Inventory.quantity = quantUpdate;
-                }
+
+                Inventory change = items.get(itemUpdate);
+                change.setQuantity(quantUpdate);
+
 
 
             } else {
